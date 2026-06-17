@@ -25,13 +25,13 @@ const ageGroups: AgeGroup[] = [
         title: "El mundo según Lea",
         author: "Carlos Javier González Serrano · Beascoa, 2023",
         description:
-          "Álbum ilustrado que acerca preguntas filosóficas sobre la identidad, la convivencia y la felicidad mediante relatos sencillos.",
+          "¿Quiénes somos? ¿Cómo deberíamos tratar a los demás? ¿Qué es lo que nos hace felices? Un álbum ilustrado en el que Lea hace preguntas tan importantes como difíciles. Filosofía adaptada a los más pequeños a través de relatos sencillos y profundos.",
       },
       {
         title: "La bruja que no quería una escoba",
         author: "Susana Isern y David Sierra Listón · Beascoa, 2023",
         description:
-          "La bruja Petra aspira a ser discípula del mago Linus, pero descubre que la oportunidad esconde una trampa.",
+          "El gran mago Linus elegirá a la mejor bruja para que se convierta en su discípula y ayudante. Es una gran oportunidad para la bruja Petra de los Tornados, pero pronto descubre que hay una trampa oculta y que quizá Linus esconde motivaciones ocultas.",
       },
     ],
   },
@@ -44,67 +44,79 @@ const ageGroups: AgeGroup[] = [
         title: "Colegio de poderes secretos",
         author: "César Mallorquí · Alfaguara, 2023",
         description:
-          "Axel descubre que quizá tiene poderes mágicos y entra en una escuela para averiguarlo. Aventura ágil, divertida y fantástica.",
+          "El día de su cumpleaños, los padres de Axel le confiesan que quizá tenga poderes mágicos y que se marchará a una escuela a averiguarlo. Libro que explota la idea de niños formándose en una escuela de magia. El libro es atractivo, con un ritmo ágil y fácil de leer. Tiene fantasía, aventuras y mucho humor. Primero de una colección que promete.",
       },
       {
         title: "Amarillo",
         author: "Lucy Zamora · Babidibú, 2021",
-        description: "Cuentos sobre Susanita y sus peluches, con historias sencillas de fantasía, luz, color y amistad.",
+        description:
+          "Cuentos infantiles que nos narran las aventuras de Susanita y sus tres peluches Pétric, Membrillo y Coita Perro. Conjunto de relatos infantiles escritos por la mexicana Lucy Zamora y dirigidos a niños a partir de 8 años, a los que les guste la luz y el color y las historias sencillas de fantasía con fondo de amistad.",
       },
       {
         title: "Karlsson en el tejado",
         author: "Astrid Lindgren · Kókinos, 2022",
-        description: "Clásico infantil que mezcla humor y fantasía con un personaje capaz de romper la rutina del protagonista.",
+        description:
+          "Novela clásica infantil de la autora sueca Astrid Lindgren, conocida mundialmente por obras como Pipi Calzaslargas. Une, de una manera desenfadada, humor y fantasía infantil. Destaca el personaje de Karlsson, que saca al protagonista de su vida corriente y le hace conseguir su sueño.",
       },
       {
         title: "Miss Agatha. Misterio en Londres",
         author: "Christine Palluy y Sophie Leullier · Larousse, 2023",
-        description: "Una Agatha Christie niña investiga una estatuilla rota junto a Max. Incluye acertijos en las ilustraciones.",
+        description:
+          "1900, Agatha Christie vive con su madre, su hermano y su institutriz en Londres. En su casa acogen durante un tiempo a Max, un huérfano de su edad. Los niños tienen un espíritu de detectives que les lleva a investigar una estatuilla hindú que se ha roto. Historia muy sencilla y sin demasiadas pretensiones sobre Agatha Christie de niña. Resulta muy interesante que en las ilustraciones que acompañan al texto aparezcan pequeños acertijos para que los niños los averigüen y razonen.",
       },
       {
         title: "La señora Lana 2",
         author: "Jutta Richter · Lóguez, 2021",
-        description: "Segunda aventura de la señora Lana, con fantasía, humor y un mundo de ensueño.",
+        description:
+          "Segunda entrega de los cuentos sobre la señora Lana de la conocida autora alemana Richter. La historia es divertida y nos lleva, con los dos protagonistas, a un mundo de ensueño y fantasía. Contrasta la vida que llevan los niños y su madre, que trabaja todo el día, y un padre que se ha marchado de casa, con las aventuras en Chiquitania.",
       },
       {
         title: "El club del fuego secreto",
         author: "Diego Blanco · Encuentro, 2020",
-        description: "Primera entrega de una saga infantil que combina aventura, humor y referencias culturales.",
+        description:
+          "Primera parte de una saga de libros infantiles del guionista Pablo Blanco que intenta acercar a los niños a los principios humanistas de nuestra civilización y a autores cristianos destacados como J. R. R. Tolkien. El libro es muy divertido y deja entrever la gran cultura de su autor.",
       },
       {
         title: "Herederos. La piedra del destino",
         author: "Juan Gómez Jurado y Bárbara Montes · B de Blok, 2024",
-        description: "Aventura al estilo Indiana Jones relacionada con el universo de Amanda Black.",
+        description:
+          "Novela relacionada con el mundo de Amanda Black, la joven aventurera. La historia resulta muy entretenida desde el principio al más puro estilo Indiana Jones, con unos personajes interesantes y algo más verosímil que las aventuras de Amanda.",
       },
       {
         title: "Serie Ideas en la Casa del Árbol",
         author: "W. Ama",
-        description: "Serie sobre un grupo de amigas en Primaria, centrada en amistad, trabajo en equipo, autoestima y familia.",
+        description:
+          "La serie Ideas en la Casa del Árbol sigue a un grupo de amigas que están terminando Primaria en sus múltiples aventuras del día a día. Los libros giran en torno a la amistad, el trabajo en equipo, el desarrollo personal, la autoestima y el valor de la familia. Aunque no llega a su calidad literaria, imita el estilo de los clásicos infantiles de Enid Blyton.",
       },
       {
         title: "Las almohadas mágicas",
         author: "Evyenios Trivizas · Blackie Books, 2022",
-        description: "Fábula fantástica sobre un pueblo sometido por un gobernante déspota y su lucha por recuperar la libertad.",
+        description:
+          "Libro del conocido autor griego Trivizás, que cuenta de una manera imaginativa y fantástica como un gobernante déspota puede acabar con la libertad de un pueblo, y la capacidad de este para salir adelante y rebelarse ante la injusticia.",
       },
       {
         title: "Nika y el misterio de Violet Hill",
         author: "Rosario Ana · Destino, 2023",
-        description: "Nika investiga un bosque maldito en Inglaterra con ayuda de la lógica y la ciencia.",
+        description:
+          "Nika y su familia viajan a Inglaterra durante las vacaciones de Navidad, en concreto al pueblo de Violet Hill. Allí un guía turístico les habla de un bosque maldito. Nika, intrépida aventurera, se adentrará en el bosque con sus amigos. Segunda parte de la colección infantil de Nika que sigue un esquema parecido: los niños encuentran un misterio e intentan descifrarlo con ayuda de la lógica y la ciencia. Esta historia resulta más verosímil que las anteriores y es menos estresante.",
       },
       {
         title: "Otra vez al teatro con Rodari",
         author: "Gianni Rodari · SM, 2022",
-        description: "Cuatro obras teatrales con fantasía, amistad, humor y preocupación social.",
+        description:
+          "Este libro recoge cuatro obras nuevas de teatro en español. Como todos los libros de Rodari, unen fantasía, amistad, amor y también su preocupación social por los desfavorecidos. A todo esto, siempre añade mucho humor. Obra muy recomendable para representar en los colegios.",
       },
       {
         title: "El niño de fuego",
         author: "Ledicia Costa · Anaya, 2022",
-        description: "Morgan llega envuelto en misterio a Lilitown. Destaca por su ambientación, personajes y valor de la amistad.",
+        description:
+          "Morgan es un niño huérfano que cada mes vive con una familia distinta de Lilitown. Su aparición en el pueblo fue de lo más curiosa. La señora Culpepper le encontró en una cesta delante de su casa con una nota en la que ponía: Llévenme más allá de la niebla. Busquen la casa de las tres hermanas y díganles que soy el niño de fuego. Cuento largo infantil escrito por la autora gallega Ledicia Costas. La autora tiene una gran experiencia como escritora, lo que se nota en la prosa del libro y en unos personajes y ambientación inolvidables y bien trazados. Destaca el valor de la amistad.",
       },
       {
         title: "Guerrero tigre. El ataque del rey dragón",
         author: "M. Chan · SM, 2022",
-        description: "Jack descubre el reino de Jade y sus poderes ligados al zodiaco chino. Aventura breve y dinámica.",
+        description:
+          "Jack es un niño al que le encantan las historias de su abuelo sobre el reino de Jade, un lugar mágico con animales fantásticos, bestias y aventuras. Un día su abuelo le entrega un disco mágico con doce caras y le anuncia que es suyo y que ahora es el nuevo Guerrero Tigre. Con el disco puede traer a cualquier animal del zodiaco chino y adquirir sus cualidades. El reino de Jade es real y Jack pasará a conocerlo. Su abuelo le cuenta que no es un lugar peligroso, ya que él encerró al último dragón. Pero al llegar allí descubre que la realidad no es como le han dicho. Novela infantil ambientada en la antigua China y los animales de su horóscopo. Una historia muy sencilla y rápida para atrapar a los niños.",
       },
     ],
   },
@@ -116,12 +128,14 @@ const ageGroups: AgeGroup[] = [
       {
         title: "Cómo arreglar un libro mojado",
         author: "Roberto Aliaga · SM, 2017",
-        description: "Novela infantil premiada, con humor, buenos personajes y un giro final sorprendente.",
+        description:
+          "Novela infantil que ganó el premio Gran Angular en 2017. Está muy bien escrita y engancha. Cuenta una historia simpática, con unos personajes muy bien definidos y llenos de humor. Tiene un giro al final que sorprende al lector. Chirría algo el lenguaje del protagonista, narrador en primera persona, que resulta algo inverosímil.",
       },
       {
         title: "Capitán Lucas",
         author: "Carles Sala i Vila · La Galera, 2022",
-        description: "Aventura imaginativa y humorística sobre unos niños que se escapan de su pueblo.",
+        description:
+          "Novela infantil de aventuras que cuenta, con mucho humor e imaginación, la historia de unos niños que se escapan de su pueblo. Tiene unas ilustraciones de Subi muy cuidadas.",
       },
     ],
   },
@@ -133,57 +147,68 @@ const ageGroups: AgeGroup[] = [
       {
         title: "El secreto del contrabandista",
         author: "Elly Griffiths · Maeva Young, 2023",
-        description: "Justina investiga en un internado inglés de entreguerras. Destacan la ambientación y la amistad.",
+        description:
+          "Segunda parte de una colección sobre Justina Jones, la joven investigadora de un internado inglés en el periodo de entreguerras del siglo XX. El libro mantiene el interés desde el principio y la historia está bien escrita y con mucha inteligencia. También destaca la ambientación en las marismas de la costa inglesa y la relación de amistad de Justina con Dorothy, una de las criadas.",
       },
       {
         title: "Los tres terribles inventos de Walter Swizwittha",
         author: "Ben Brooks · Blackie Books, 2024",
-        description: "Aventura con crítica a redes sociales, trabajo abusivo y falta de comunidad.",
+        description:
+          "Novela infantil de Ben Brooks, autor también de La historia imposible de Sebastian Cole. La historia, que parece una fábula de aventura y aprendizaje, esconde también una crítica al sistema en que vivimos, a la adicción a las redes sociales, a los sistemas de trabajo abusivos y a la necesidad de una comunidad unida en la que apoyarse para vivir con libertad.",
       },
       {
         title: "Crónicas de Avonlea",
         author: "Lucy Maud Montgomery · Almuzara, 2024",
-        description: "Relatos ambientados en una comunidad rural con drama, humor y crecimiento.",
+        description:
+          "Una colección de historias encantadoras ambientadas en la pequeña comunidad de Avonlea. A través de las aventuras de sus queridos personajes, el libro captura la esencia de la vida en una comunidad rural de principios del siglo XX y los desafíos y alegrías de crecer y madurar en cualquier época. Cada historia es una deliciosa mezcla de drama, romance y humor.",
       },
       {
         title: "Preparados, listo, ¡ya!",
         author: "Andrea Tomé · La Galera, 2023",
-        description: "Novela deportiva sobre atletismo, superación e integración en un nuevo equipo.",
+        description:
+          "Enri Baquero y su familia se van a vivir a otra ciudad. Enri era el mejor en su anterior equipo de atletismo, pero ahora pasa a ser uno más. Novela enfocada a un público preadolescente masculino al que le gustan los deportes. El argumento se centra en las competiciones y en cómo Enri lucha por superarse. También se trata la integración en el equipo y en un colegio nuevo.",
       },
       {
         title: "El joven Lorca",
         author: "Luna Bruna · Duomo, 2024",
-        description: "Aventura y misterio sobre Federico García Lorca niño y sus amistades.",
+        description:
+          "Novela de aventuras y misterio que nos aproxima al personaje de Federico García Lorca de niño, sensible, amante de la música, y conocedor de todas las historias populares de Andalucía. La trama engancha y entretiene. Además de la resolución del misterio, la autora desarrolla la relación de amistad entre los tres niños de ambientes diferentes; Federico, Cecilia, una niña austríaca que vive con sus abuelos en una gran casa señorial, y Antoñito, un niño de la calle.",
       },
       {
         title: "Los dioses del Norte 5. El despertar del lobo",
         author: "Jara Santamaría · B de Blok, 2024",
-        description: "Fantasía basada en mitología vasca con mundos paralelos y narración coral.",
+        description:
+          "Quinta entrega de Los dioses del Norte, la saga de Jara Santamaría sobre la mitología vasca. Como en las anteriores hay dos mundos paralelos, el normal y el de Gaua o mundo mágico. La historia resulta entretenida y ágil desde el principio. Está contada, cada capítulo, por los tres protagonistas. Se recomienda leer las anteriores entregas, antes que esta, para comprender mejor el contexto, la historia y los personajes.",
       },
       {
         title: "Amanda Black. El templo olvidado",
         author: "Juan Gómez Jurado y Bárbara Montes · B de Blok, 2024",
-        description: "Nueva aventura de Amanda Black con tecnología, valentía y objetos mágicos peligrosos.",
+        description:
+          "Nueva entrega de la saga de Amanda Black, dirigida a niños y preadolescentes. Como siempre, la protagonista y sus amigos utilizan tecnología sofisticada, que unida a su valentía, les ayudan a conseguir sus objetivos. Siempre son objetos mágicos peligrosos que recuperan para guardar a buen recaudo en su mansión y que no sean un peligro para la humanidad. En este caso un espíritu muy peligroso.",
       },
       {
         title: "City Spies 3. La ciudad prohibida",
         author: "James Ponti · Duomo, 2024",
-        description: "Espionaje juvenil ágil, con amistad y distinción entre el bien y el mal.",
+        description:
+          "La serie City Spies, que recoge las aventuras de un grupo de espías adolescentes reclutados por los servicios secretos británicos. De lectura ágil y ligera, la trama está muy bien desarrollada y mantiene la atención. Los personajes son atractivos y transmite una visión muy positiva de la amistad, la moral y la importancia de distinguir entre el bien y el mal.",
       },
       {
         title: "Manuela Jones y el misterio de la Alhambra",
         author: "Miriam Mosquera · Molino, 2025",
-        description: "Aventura arqueológica y divulgativa ambientada en Granada.",
+        description:
+          "Manuela Jones es hija de los responsables del Museo Arqueológico Nacional. Un día llaman a sus padres desde Granada para recibir una donación muy valiosa. Cuando llegan, sufren un contratiempo, que hará que tanto Manuela como su hermano gemelo J.J. se adentren en una gran aventura. Primera novela de una saga dirigida a público infantil y preadolescente cuyo tema de fondo es la arqueología, la divulgación y conservación del patrimonio de nuestro país. La historia sigue el esquema de otras similares con aventuras, acción y misterios. Está bien escrita y se nota que la autora es historiadora.",
       },
       {
         title: "Feriópolis",
         author: "Ledicia Costa · SM, 2025",
-        description: "Novela corta premiada sobre una niña huérfana que busca familia y felicidad en un mundo imaginativo.",
+        description:
+          "Lola tiene diez años, es huérfana y vive con sus tíos que no la quieren nada y le revenden los juguetes. Lo que más le gusta es ir con Ruth a la feria de su ciudad y montarse en el tren de la bruja. Novela corta ganadora del premio Barco de Vapor 2025. El libro está muy bien editado con unas ilustraciones bonitas que realzan la fuerza del texto. La historia desborda imaginación tanto en la descripción del tren de la bruja y cómo lo vive una niña, así como en Feriópolis, el lugar en el que acaba la protagonista después de montar en el tren. De fondo está el tema de la búsqueda de una familia y un lugar en el que ser feliz cuando las circunstancias son negativas.",
       },
       {
         title: "Crónicas de la prehistoria",
         author: "Michelle Paver · Salamandra",
-        description: "Saga de fantasía ambientada en la Edad de Piedra, con aventura, magia, amistad y acción.",
+        description:
+          "Saga de fantasía ambientada en la Edad de Piedra. Ocho libros de aventuras y magia que te sumergirán en la época de la Prehistoria como un miembro más del clan. Una combinación de fantasía e historia muy bien documentada que combina suspense, amistad, personajes entrañables y mucha acción.",
       },
     ],
   },
@@ -195,17 +220,20 @@ const ageGroups: AgeGroup[] = [
       {
         title: "Trilogía de Howl",
         author: "Diana Wynne Jones · Nocturna",
-        description: "Clásico moderno de fantasía sobre Sophie, una maldición y el castillo ambulante del mago Howl.",
+        description:
+          "El primero de esta saga está considerado uno de los clásicos modernos de la literatura fantástica. En el país de Ingary, donde existen cosas como las botas de siete leguas o las capas de invisibilidad, que una bruja te maldiga no es algo inusual. Cuando la Bruja del Páramo convierte a Sophie Hatter en una anciana, la joven abandona la sombrerería familiar para pedir ayuda en el único lugar mágico que se le ocurre: el castillo ambulante que atemoriza a los habitantes de Market Chipping. Pues dentro no sólo se halla un demonio del fuego, sino también el perverso mago Howl, tan diestro en realizar hechizos como en robar los corazones de las damas.",
       },
       {
         title: "Secuestro en la pandemia",
         author: "Juan José Molina · Alexia, 2025",
-        description: "Novela breve de aventuras y misterio sobre el paso a la madurez de un adolescente.",
+        description:
+          "Novela de aventuras y misterio que muestra la vida y el paso a la madurez de un adolescente de 12 años. Una lectura breve, ágil y llena de aventuras.",
       },
       {
         title: "El príncipe de los caballos",
         author: "Stacy Gregg · HarperCollins, 2021",
-        description: "Historia de resiliencia ambientada en la Polonia invadida de 1939.",
+        description:
+          "Una historia de resiliencia que nos lleva a la Polonia invadida de 1939.",
       },
     ],
   },
@@ -217,27 +245,32 @@ const ageGroups: AgeGroup[] = [
       {
         title: "Elliot Tomclyde",
         author: "Joaquín Londaíz Montiel · Torbellino de Letras, 2021",
-        description: "Inicio de una saga mágica con formación, aventuras y amenaza de un villano.",
+        description:
+          "Primera parte de una saga de libros con Elliot como protagonista de una serie de aventuras en un mundo de magia amenazado por un villano de nombre Tanatos. Su formación en el colegio de magia de Hidden Wood, tiene cierto parecido a Harry Potter, pero los hechos resultarán interesantes para lectores de fantasía.",
       },
       {
         title: "La historia imposible de Sebastian Cole",
         author: "Ben Brooks · Blackie Books, 2020",
-        description: "Fantasía y aventuras sobre amistad, familia y rescate.",
+        description:
+          "Novela juvenil de fantasía y aventuras. El argumento resulta muy entretenido y vamos siguiendo a los protagonistas en múltiples aventuras por salvar a su nuevo amigo. Se remarca mucho el valor de la amistad y el de la familia. Un libro divertido que gustará a un público amplio.",
       },
       {
         title: "El muro que nos separa",
         author: "Dan Smith · Algar, 2024",
-        description: "Novela epistolar sobre dos primas separadas por el Muro de Berlín.",
+        description:
+          "Monika y Anja son primas y amigas inseparables que viven en Berlín. Un su calle se divide por la mitad con un alambre. Se describe con detalle la construcción del muro de Berlín y su influencia en los habitantes de ambos lados. También refleja bien los conflictos interiores de los personajes. La novela es epistolar y reúne cartas o fragmentos de diarios de las dos niñas, así como noticias de periódicos, lo que da mayor verosimilitud al texto.",
       },
       {
         title: "La chica que hablaba oso",
         author: "Sophie Anderson · Errata Naturae, 2024",
-        description: "Búsqueda de identidad enlazada con cuentos de tradición rusa.",
+        description:
+          "Novela juvenil que cuenta la búsqueda de la identidad de una adolescente. Y lo hace de una manera original, ya que enlaza la historia de la niña con cuentos de tradición rusa que le van contando de manera progresiva, según avanza la acción. El argumento resulta entretenido y destaca el valor de la amistad entre Yanka y los animales y personas que se va encontrando.",
       },
       {
         title: "Los ladrones buenos",
         author: "Katherine Rundell · Salamandra, 2021",
-        description: "Aventura en el Nueva York de principios del siglo XX con una protagonista valiente.",
+        description:
+          "El libro está muy bien ambientado en el Nueva York de principios de siglo XX con sus bandas mafiosas. Y destaca sobre todo la protagonista, Vita, que a pesar de tener cierta discapacidad por la polio, se enfrenta a las adversidades con valentía y arrojo.",
       },
       {
         title: "El explorador del Amazonas",
@@ -504,9 +537,15 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">Guía interactiva</p>
           <h1 id="page-title">Libros recomendados por edades</h1>
+          <p className="subtitle">(5 a 18 años)</p>
           <p className="lead">
             Una selección de lecturas infantiles y juveniles de 5 a 18 años, organizada para encontrar rápido el
             siguiente libro según edad, intereses y etapa lectora.
+          </p>
+          <p className="credit">
+            Una selección realizada por <a href="https://www.aceprensa.com" target="_blank" rel="noopener">Aceprensa</a>, portal
+            que analiza las tendencias sociales, corrientes de pensamiento y estilos de vida, con fondo y perspectiva
+            internacional.
           </p>
         </div>
         <div className="hero-panel" aria-label="Resumen de la guía">
