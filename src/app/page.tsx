@@ -756,6 +756,14 @@ export default function Home() {
           </section>
         ))
       )}
+
+      <footer className="site-footer">
+        <p>
+          Esta página web está inspirada en la página del colegio{" "}
+          <a href="https://www.orvalle.es/leer-en-familia/" target="_blank" rel="noopener">Orvalle</a>.
+          Muchas gracias por el trabajo que realizáis para promover la lectura.
+        </p>
+      </footer>
     </main>
   );
 }
