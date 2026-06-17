@@ -302,7 +302,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "A partir de 13 años",
     category: "Juvenil",
-    intro: "Novelas históricas que combinan hechos reales y aventura.",
+    intro: "Para mayores de 13 años hemos seleccionado novelas históricas que combinan hechos reales con aventuras adaptadas a su edad. Estas lecturas permiten conocer la historia de manera entretenida, fomentando la curiosidad, el pensamiento crítico y la comprensión del pasado, mientras disfrutan de historias bien narradas y repletas de acción y emoción.",
     books: [
       {
         title: "El secreto de mi madre",
@@ -533,6 +533,27 @@ export default function Home() {
     return matchesSearch && matchesAge;
   });
 
+  const isSearching = !!query;
+  const groupsToShow = isSearching
+    ? []
+    : activeAge
+      ? ageGroups.filter((g) => g.label === activeAge)
+      : ageGroups;
+
+  function renderCard(book: typeof allBooks[number]) {
+    return (
+      <details className="book-card" key={`${book.age}-${book.title}`}>
+        <summary>
+          {book.cover && <img alt={`Portada de ${book.title}`} className="book-cover" loading="lazy" src={book.cover} />}
+          <span className="book-meta">{book.age}</span>
+          <h2>{book.title}</h2>
+          <p>{book.author}</p>
+        </summary>
+        <p className="book-description">{book.description}</p>
+      </details>
+    );
+  }
+
   return (
     <main className="page-shell" id="arriba">
       <section className="hero" aria-labelledby="page-title">
@@ -582,40 +603,39 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="results-header" aria-live="polite">
-        <p>
-          {visibleBooks.length} {visibleBooks.length === 1 ? "resultado" : "resultados"}
-        </p>
-        {query && (
-          <button
-            className="reset-button"
-            onClick={() => setQuery("")}
-            type="button"
-          >
-            Limpiar búsqueda
-          </button>
-        )}
-      </section>
-
-      <section className="book-grid" aria-label="Libros recomendados">
-        {visibleBooks.map((book) => (
-          <details className="book-card" key={`${book.age}-${book.title}`}>
-            <summary>
-              {book.cover && <img alt={`Portada de ${book.title}`} className="book-cover" loading="lazy" src={book.cover} />}
-              <span className="book-meta">{book.age}</span>
-              <h2>{book.title}</h2>
-              <p>{book.author}</p>
-            </summary>
-            <p className="book-description">{book.description}</p>
-          </details>
-        ))}
-      </section>
-
-      {visibleBooks.length === 0 && (
-        <section className="empty-state">
-          <h2>No hay resultados para esa búsqueda</h2>
-          <p>Prueba con otro tramo de edad o con una palabra más general, como aventura, misterio o amistad.</p>
-        </section>
+      {isSearching ? (
+        <>
+          <section className="results-header" aria-live="polite">
+            <p>
+              {visibleBooks.length} {visibleBooks.length === 1 ? "resultado" : "resultados"}
+            </p>
+            <button className="reset-button" onClick={() => setQuery("")} type="button">
+              Limpiar búsqueda
+            </button>
+          </section>
+          <section className="book-grid" aria-label="Libros recomendados">
+            {visibleBooks.map(renderCard)}
+          </section>
+          {visibleBooks.length === 0 && (
+            <section className="empty-state">
+              <h2>No hay resultados para esa búsqueda</h2>
+              <p>Prueba con otro tramo de edad o con una palabra más general, como aventura, misterio o amistad.</p>
+            </section>
+          )}
+        </>
+      ) : (
+        groupsToShow.map((group) => (
+          <section key={group.label} className="age-section" aria-labelledby={`heading-${group.label}`}>
+            <h2 id={`heading-${group.label}`} className="age-heading">{group.label}</h2>
+            <p className="age-intro">{group.intro}</p>
+            <div className="book-grid">
+              {group.books.map((book) => {
+                const cover = coverImages[book.title] ? `${basePath}${coverImages[book.title]}` : undefined;
+                return renderCard({ ...book, age: group.label, category: group.category, cover });
+              })}
+            </div>
+          </section>
+        ))
       )}
     </main>
   );
