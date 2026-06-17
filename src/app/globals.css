@@ -334,9 +334,9 @@ h1 {
 .book-card h2 {
   margin-bottom: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.45rem, 3vw, 2.05rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
 }
 
 .book-card summary p {

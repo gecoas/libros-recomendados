@@ -19,7 +19,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 5 a 7 años",
     category: "Infantil",
-    intro: "Fantasía accesible y relatos profundos adaptados a primeros lectores.",
+    intro: "En la primera sección de los libros recomendados por edades, ponemos el foco en los libros para niños de 5 a 7 años, en los que encontrarán fantasía accesible y relatos profundos adaptados a su edad. La bruja que no quería una escoba fomenta la imaginación, mientras que El mundo según Lea introduce cuestiones filosóficas de manera sencilla, ayudándoles a hacerse preguntas sobre la vida y a disfrutar de la lectura desde que son pequeños.",
     books: [
       {
         title: "El mundo según Lea",
@@ -38,7 +38,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 8 a 10 años",
     category: "Infantil",
-    intro: "Fantasía, clásicos infantiles y relatos de amistad, superación y pensamiento crítico.",
+    intro: "Los libros de 8 a 10 años combinan fantasía, clásicos infantiles y relatos con valores como la amistad y la capacidad de sobreponerse. Estas lecturas enganchan a los pequeños lectores, fomentan su gusto por la lectura y les ayudan a desarrollar empatía y pensamiento crítico, mientras disfrutan de historias emocionantes desde la primera página.",
     books: [
       {
         title: "Colegio de poderes secretos",
@@ -123,7 +123,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "A partir de 9 años",
     category: "Infantil",
-    intro: "Historias de humor y calidad literaria para lectores con más autonomía.",
+    intro: "En los libros recomendados por edades a partir de 9 años predomina el humor y la literatura de calidad, pensados para los pequeños grandes lectores. Estas historias son divertidas, entretenidas y fáciles de leer, al mismo tiempo que introducen valores y enseñanzas importantes, animando a los niños a leer para disfrutar y a desarrollar su imaginación.",
     books: [
       {
         title: "Cómo arreglar un libro mojado",
@@ -142,7 +142,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 10 a 12 años",
     category: "Juvenil",
-    intro: "Fantasía, misterio y crecimiento personal para preadolescentes.",
+    intro: "Los libros de 10 a 12 años están dirigidos a preadolescentes y combinan fantasía con historias que invitan a reflexionar sobre crecer, los desafíos de la vida y valores como la superación o la honestidad. Estas lecturas enganchan desde la primera página y ayudan a desarrollar pensamiento crítico, empatía y gusto por la lectura a medida que maduran.",
     books: [
       {
         title: "El secreto del contrabandista",
@@ -215,7 +215,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "A partir de 11 años",
     category: "Juvenil",
-    intro: "Aventuras, misterio y fantasía con valentía, perseverancia y crecimiento.",
+    intro: "Para lectores mayores de 11 años ofrecemos novelas de aventuras, misterio y fantasía que combinan acción, reflexión y valores como la valentía y la perseverancia. Entre ellas se encuentra el primer libro de una trilogía clásica moderna, historias de misterio y relatos que muestran la importancia de sobreponerse a los obstáculos y tomar decisiones importantes.",
     books: [
       {
         title: "Trilogía de Howl",
@@ -240,7 +240,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 12 a 14 años",
     category: "Juvenil",
-    intro: "Fantasía, historia, aventuras y misterio con amistad, valentía y responsabilidad.",
+    intro: "Los libros de 12 a 14 años incluyen fantasía, historia, aventuras y misterio. Estas lecturas enganchan a los adolescentes mientras transmiten valores como la amistad, la valentía y la responsabilidad. Ideales para fomentar la curiosidad y la pasión por la lectura, permiten a los jóvenes explorar diferentes géneros y aprender mientras disfrutan de historias emocionantes y educativas.",
     books: [
       {
         title: "Elliot Tomclyde",
@@ -319,7 +319,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 14 a 16 años",
     category: "Juvenil",
-    intro: "Salud mental, acoso, enfermedad, amistad, redes sociales, aventura y refugiados.",
+    intro: "Los libros juveniles de 14 a 16 años abordan temas actuales y relevantes, como la salud mental, el acoso escolar, la aceptación de la enfermedad, la amistad y los refugiados. Estas novelas fomentan la empatía, la reflexión y el debate, al tiempo que enganchan al lector con historias contemporáneas que conectan con sus experiencias y desafíos.",
     books: [
       {
         title: "Julia y el tiburón",
@@ -371,7 +371,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "A partir de 15 años",
     category: "Juvenil",
-    intro: "Misterio, intriga, gastronomía literaria y humor inteligente.",
+    intro: "Para mayores de 15 años hemos seleccionado dos novelas de misterio e intriga y un clásico del humor británico de P. G. Wodehouse. Estas lecturas combinan entretenimiento, suspense y humor inteligente, ofreciendo historias que mantienen al lector interesado, fomentan la imaginación y animan a seguir descubriendo distintos géneros literarios.",
     books: [
       {
         title: "Las recetas perdidas de la taberna Kamogawa",
@@ -393,7 +393,7 @@ const ageGroups: AgeGroup[] = [
   {
     label: "De 16 a 18 años",
     category: "Juvenil",
-    intro: "Identidad, relaciones, retos personales, historia, misterio y madurez lectora.",
+    intro: "Las novelas de 16 a 18 años tratan temas como la identidad, las relaciones y los retos personales, combinando historias emocionantes con reflexiones profundas. Ideales para desarrollar pensamiento crítico y empatía, nuestra selección mezcla clásicos y novedades juveniles que acompañan a los adolescentes en su crecimiento y fomentan el gusto por la lectura.",
     books: [
       {
         title: "Cincuenta cincuenta",
