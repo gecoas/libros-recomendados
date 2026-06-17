@@ -130,7 +130,7 @@ h1 {
 
 .hero-panel strong {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 4rem;
+  font-size: 2.4rem;
   line-height: 0.9;
 }
 
@@ -216,6 +216,37 @@ h1 {
 
 .reset-button {
   padding: 11px 16px;
+}
+
+.age-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.age-filter {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: white;
+  color: var(--foreground);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.age-filter:hover {
+  border-color: var(--sage);
+  background: rgba(30, 95, 88, 0.06);
+}
+
+.age-filter.active {
+  border-color: var(--sage);
+  background: var(--sage);
+  color: white;
 }
 
 .book-grid {

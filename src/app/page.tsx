@@ -524,11 +524,13 @@ const allBooks = ageGroups.flatMap((group) =>
 
 export default function Home() {
   const [query, setQuery] = useState("");
+  const [activeAge, setActiveAge] = useState("");
   const deferredQuery = useDeferredValue(query.trim().toLowerCase());
 
   const visibleBooks = allBooks.filter((book) => {
-    const searchable = `${book.title} ${book.author} ${book.description} ${book.age} ${book.category}`.toLowerCase();
-    return searchable.includes(deferredQuery);
+    const matchesSearch = `${book.title} ${book.author} ${book.description} ${book.age} ${book.category}`.toLowerCase().includes(deferredQuery);
+    const matchesAge = !activeAge || book.age === activeAge;
+    return matchesSearch && matchesAge;
   });
 
   return (
@@ -566,6 +568,18 @@ export default function Home() {
             type="search"
           />
         </label>
+        <div className="age-filters">
+          {ageGroups.map((group) => (
+            <button
+              key={group.label}
+              className={`age-filter${activeAge === group.label ? " active" : ""}`}
+              onClick={() => setActiveAge(activeAge === group.label ? "" : group.label)}
+              type="button"
+            >
+              {group.label}
+            </button>
+          ))}
+        </div>
       </section>
 
       <section className="results-header" aria-live="polite">
