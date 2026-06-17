@@ -118,6 +118,18 @@ const ageGroups: AgeGroup[] = [
         description:
           "Jack es un niño al que le encantan las historias de su abuelo sobre el reino de Jade, un lugar mágico con animales fantásticos, bestias y aventuras. Un día su abuelo le entrega un disco mágico con doce caras y le anuncia que es suyo y que ahora es el nuevo Guerrero Tigre. Con el disco puede traer a cualquier animal del zodiaco chino y adquirir sus cualidades. El reino de Jade es real y Jack pasará a conocerlo. Su abuelo le cuenta que no es un lugar peligroso, ya que él encerró al último dragón. Pero al llegar allí descubre que la realidad no es como le han dicho. Novela infantil ambientada en la antigua China y los animales de su horóscopo. Una historia muy sencilla y rápida para atrapar a los niños.",
       },
+      {
+        title: "Los Titanes del Fútbol. El asesinato del delantero centro",
+        author: "Juan Ramón Barat · Anaya, 2026",
+        description:
+          "Primera entrega de una nueva serie del autor, que inicia una trama de misterio en el mundo del fútbol. Cuando el delantero centro de los Titanes es asesinado en extrañas circunstancias, un grupo de jóvenes se verá envuelto en una investigación que combina deporte, intriga y trabajo en equipo. Barat demuestra su buen pulso narrativo y su capacidad para conectar con los lectores jóvenes, iniciando una serie que promete mantener el nivel de sus obras anteriores.",
+      },
+      {
+        title: "Los Futbolísimos. El misterio del córner más largo del mundo",
+        author: "Roberto Santiago · SM, 2026",
+        description:
+          "Vigésimo novena entrega de la exitosa serie Los Futbolísimos, una de las colecciones infantiles más leídas de los últimos años en España. El equipo de Soto Alto se enfrenta a un nuevo misterio: un córner que parece no tener fin. Con su característica mezcla de humor, fútbol y trabajo en equipo, los Futbolísimos deberán usar su ingenio para resolver este enigma y demostrar que la amistad puede con todo.",
+      },
     ],
   },
   {
@@ -132,10 +144,34 @@ const ageGroups: AgeGroup[] = [
           "Novela infantil que ganó el premio Gran Angular en 2017. Está muy bien escrita y engancha. Cuenta una historia simpática, con unos personajes muy bien definidos y llenos de humor. Tiene un giro al final que sorprende al lector. Chirría algo el lenguaje del protagonista, narrador en primera persona, que resulta algo inverosímil.",
       },
       {
-        title: "Capitán Lucas",
-        author: "Carles Sala i Vila · La Galera, 2022",
+        title: "Querido Bruto",
+        author: "José Ramón Ayllón · Palabra, 2008",
         description:
-          "Novela infantil de aventuras que cuenta, con mucho humor e imaginación, la historia de unos niños que se escapan de su pueblo. Tiene unas ilustraciones de Subi muy cuidadas.",
+          "Novela epistolar imaginaria sobre Julio César y Marco Bruto.",
+      },
+      {
+        title: "El esplendor de los mares",
+        author: "Paloma Bordons · Edebé, 2026",
+        description:
+          "Una novela de aventuras marítimas que transporta al lector a través de los océanos. La autora construye una historia de descubrimiento, amistad y superación personal, con el mar como escenario de fondo. Una lectura que engancha desde la primera página y despierta el espíritu aventurero, ideal para los jóvenes que buscan historias de exploración y crecimiento personal.",
+      },
+      {
+        title: "Ana, la de las Tejas Verdes",
+        author: "L. M. Montgomery · Bruño, 2022",
+        description:
+          "El clásico de la literatura canadiense en una nueva edición ilustrada. Ana Shirley, una huérfana de once años, llega por error a Tejas Verdes, la granja de los hermanos Cuthbert. Con su imaginación desbordante, su carácter inquebrantable y su forma única de ver el mundo, Ana conquista a todos los habitantes de Avonlea y demuestra que una niña puede cambiar la vida de quienes la rodean. Una historia atemporal sobre la pertenencia, la amistad y el poder de soñar.",
+      },
+      {
+        title: "Quo Vadis?",
+        author: "Henryk Sienkiewicz · Rialp, 2026",
+        description:
+          "Quo Vadis?, publicada en 1896 por Henryk Sienkiewicz, es una novela histórica ambientada en la Roma de Nerón, en la época del incendio de la ciudad y de la primera persecución contra los cristianos. Sobre ese marco histórico se desarrolla la historia de Marco Vinicio, un joven patricio romano, y Ligia, una rehén bárbara convertida al cristianismo. Uno de los principales valores de la obra es la reconstrucción ambiental: Sienkiewicz describe con detalle las costumbres de la plebe y del patriciado, los espectáculos públicos y la vida cotidiana de la capital del Imperio. Una obra maestra que sigue fascinando a los lectores jóvenes.",
+      },
+      {
+        title: "Track 3. Sunny",
+        author: "Jason Reynolds · La Galera, 2026",
+        description:
+          "Este volumen, que forma parte de la serie Track, sigue las trayectorias vitales de cuatro adolescentes unidos por el atletismo. En esta ocasión, el foco se centra en Sunny, un chico aparentemente luminoso, siempre dispuesto a sonreír, pero atravesado por un profundo conflicto interior: su madre murió al darle a luz. Su padre, emocionalmente distante, le obliga a practicar atletismo para honrar su memoria. Una novela sobre la culpa, el duelo y la búsqueda de la propia identidad, que mantiene el pulso narrativo del proyecto Track.",
       },
     ],
   },
@@ -209,6 +245,30 @@ const ageGroups: AgeGroup[] = [
         author: "Michelle Paver · Salamandra",
         description:
           "Saga de fantasía ambientada en la Edad de Piedra. Ocho libros de aventuras y magia que te sumergirán en la época de la Prehistoria como un miembro más del clan. Una combinación de fantasía e historia muy bien documentada que combina suspense, amistad, personajes entrañables y mucha acción.",
+      },
+      {
+        title: "La Montaña del Eco",
+        author: "Lauren Wolk · Errata naturae, 2025",
+        description:
+          "Después de perderlo casi todo en la Gran Depresión, la familia de Ellie se ve obligada a abandonar su casa en la ciudad y volver a empezar en la naturaleza indómita de la montaña del Eco. Ambientada en los años posteriores al crack de 1929, la novela sitúa al lector en una época marcada por la pobreza, el desarraigo y la necesidad de empezar de nuevo. Una historia de resiliencia, perseverancia y amistad a lo largo de tres generaciones, de la autora galardonada con la Medalla Newbery y el Premio Scott O'Dell.",
+      },
+      {
+        title: "Intriga en Estambul",
+        author: "Erica Ruth Neubauer · Maeva, 2026",
+        description:
+          "Jane Wunderly viaja a Estambul en busca de un profesor desaparecido. En su destino la recibe su tía Millie con noticias inquietantes: el profesor estaba en una misión para localizar el corazón perdido del sultán Solimán el Magnífico, una reliquia legendaria del Imperio otomano, pero no encuentran ningún rastro de sus pasos. Una novela de misterio histórico con una ambientación fascinante, personajes carismáticos y una trama llena de giros que mantiene el interés hasta la última página.",
+      },
+      {
+        title: "La memoria de las bicicletas",
+        author: "Josan Hatero · SM, 2026",
+        description:
+          "Galardonada con el Premio Barco de Vapor 2026. Martín, un niño de once años, inicia las vacaciones convencido de que serán las más aburridas de su vida: lejos de la playa, deberá instalarse en Corvo Blanco, el pueblo gallego de su madre. La llegada se ve alterada por la aparición de Sabela y Cibrán, que introducen un elemento de intriga —un supuesto fantasma en la casa familiar— que pronto se revela como una historia profundamente humana: la de la tía Aurora, atrapada entre los recuerdos y la espera.",
+      },
+      {
+        title: "La historia interminable",
+        author: "Michael Ende · Alfaguara, 2007",
+        description:
+          "La historia interminable construye un juego narrativo en el que realidad y fantasía se entrelazan. Bastián Baltasar Bux, un chico solitario e inseguro marcado por la muerte de su madre y víctima de acoso escolar, descubre en una librería un libro que lo atrapa desde el primer instante. Escondido en el desván del colegio, lee la historia de Fantasía, un reino amenazado por la Nada. Atreyu emprende la misión de salvar a la Emperatriz Infantil, pero la historia da un giro decisivo cuando Bastián deja de ser un simple lector y entra en Fantasía para vivir su propia aventura. Un clásico imprescindible de la literatura juvenil.",
       },
     ],
   },
@@ -296,6 +356,48 @@ const ageGroups: AgeGroup[] = [
         title: "Cuatro Lunas 1. Mareas de magia",
         author: "Laura Gallego · SM, 2025",
         description: "Fantasía de búsqueda con lealtad, maternidad y crecimiento del protagonista.",
+      },
+      {
+        title: "Entre el amor y la guerra",
+        author: "Julie Berry · Elastic Books, 2026",
+        description:
+          "Una novela histórica ambientada en un contexto bélico que explora las relaciones humanas en tiempos de conflicto. La autora teje una historia de amor, sacrificio y valentía donde los protagonistas deben enfrentarse a decisiones imposibles que pondrán a prueba sus convicciones y su corazón. Una lectura que invita a reflexionar sobre el precio de la guerra y la fuerza del amor en las circunstancias más adversas.",
+      },
+      {
+        title: "El secreto del río",
+        author: "Isabel Ibáñez · Puck, 2024",
+        description:
+          "Aventura con magia, intriga y ambientación egipcia, protagonizada por Inez Olivera.",
+      },
+      {
+        title: "Un hijo",
+        author: "Alejandro Palomas · Elastic Books, 2026",
+        description:
+          "Una novela que explora la paternidad desde una perspectiva profunda y conmovedora. El autor construye un relato íntimo sobre la relación entre padres e hijos, los lazos invisibles que nos unen y las decisiones que nos definen como personas. Una obra que invita a la reflexión sobre el significado de la familia, el sacrificio y el amor incondicional.",
+      },
+      {
+        title: "El mundo perdido",
+        author: "Arthur Conan Doyle · Rialp, 2026",
+        description:
+          "El clásico de aventuras del creador de Sherlock Holmes en una nueva edición. El profesor Challenger, un científico excéntrico y genial, reúne a un grupo de exploradores para viajar a una meseta remota de Sudamérica donde, según sus teorías, aún sobreviven especies prehistóricas. Una novela de aventuras trepidante que combina ciencia, misterio y exploración, ideal para los jóvenes amantes de la acción y los descubrimientos.",
+      },
+      {
+        title: "La chica que lanzaba versos al aire",
+        author: "Andrea Longarela · Nube de Tinta, 2026",
+        description:
+          "Una novela que retrata el desconcierto emocional de la adolescencia. Blue es una chica cuya vida ha perdido los puntos de apoyo que le daban estabilidad: su padre ha desaparecido, su madre ha rehecho su vida con otra persona y su mejor amigo ha dejado de hablarle. En el instituto es objeto de burlas y desprecios. Solo encuentra alivio en la escritura; con ella, el dolor se ordena y la angustia encuentra palabras. En ese proceso crea a Apple, un alter ego literario con el que dialoga. Una historia sobre el poder sanador de la palabra y la búsqueda de la propia identidad.",
+      },
+      {
+        title: "La cacería",
+        author: "David Lozano · Edebé, 2025",
+        description:
+          "Seis jóvenes son invitados a probar VENARI, un revolucionario videojuego de realidad mixta capaz de reproducir sensaciones físicas reales. Aislados en un pueblo abandonado y organizados en parejas, deberán enfrentarse a criaturas virtuales cada vez más letales con el objetivo de cazar a una monstruosa mantícora. Pero lo que comienza como una experiencia inmersiva se transforma en una pesadilla cuando el sistema, gobernado por una inteligencia artificial, empieza a actuar de forma autónoma. La línea entre ficción y realidad se diluye, y los cazadores se convierten en presas.",
+      },
+      {
+        title: "El retorno de Rachel Price",
+        author: "Holly Jackson · Crossbooks, 2025",
+        description:
+          "La autora británica Holly Jackson se ha consolidado como una de las voces más reconocibles del suspense juvenil contemporáneo. Rachel Price desapareció hace dieciséis años sin dejar rastro, teniendo como único testigo a su hija Bel, que entonces era un bebé. Cuando la familia accede a participar en un documental sobre la desaparición, ocurre lo impensable: Rachel Price regresa. Una novela adictiva que combina intriga, tensión psicológica y una brillante construcción del misterio, manteniendo al lector en vilo hasta la última página.",
       },
     ],
   },
@@ -509,6 +611,23 @@ const coverImages: Record<string, string> = {
   "El túnel 29": "/covers/el-tunel-29.webp",
   "Asesinato para principiantes": "/covers/asesinato-para-principiantes.webp",
   "El secreto del río": "/covers/el-secreto-del-rio.webp",
+  "Los Titanes del Fútbol. El asesinato del delantero centro": "/covers/los-titanes-del-futbol-el-asesinato-del-delantero-centro.webp",
+  "Los Futbolísimos. El misterio del córner más largo del mundo": "/covers/los-futbolisimos-el-misterio-del-corner-mas-largo-del-mundo.webp",
+  "La Montaña del Eco": "/covers/la-montana-del-eco.webp",
+  "Intriga en Estambul": "/covers/intriga-en-estambul.webp",
+  "La memoria de las bicicletas": "/covers/la-memoria-de-las-bicicletas.webp",
+  "La historia interminable": "/covers/la-historia-interminable.webp",
+  "Entre el amor y la guerra": "/covers/entre-el-amor-y-la-guerra.webp",
+  "El pequeño mentiroso": "/covers/el-pequeno-mentiroso.webp",
+  "El esplendor de los mares": "/covers/el-esplendor-de-los-mares.webp",
+  "Ana, la de las Tejas Verdes": "/covers/ana-la-de-las-tejas-verdes.webp",
+  "Quo Vadis?": "/covers/quo-vadis.webp",
+  "Track 3. Sunny": "/covers/track-3-sunny.webp",
+  "Un hijo": "/covers/un-hijo.webp",
+  "El mundo perdido": "/covers/el-mundo-perdido.webp",
+  "La chica que lanzaba versos al aire": "/covers/la-chica-que-lanzaba-versos-al-aire.webp",
+  "La cacería": "/covers/la-caceria.webp",
+  "El retorno de Rachel Price": "/covers/el-retorno-de-rachel-price.webp",
 };
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
