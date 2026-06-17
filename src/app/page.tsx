@@ -1,6 +1,6 @@
 "use client";
 
-import { startTransition, useDeferredValue, useState } from "react";
+import { useDeferredValue, useState } from "react";
 
 type AgeGroup = {
   label: string;
@@ -411,30 +411,92 @@ const ageGroups: AgeGroup[] = [
   },
 ];
 
-const allBooks = ageGroups.flatMap((group) => group.books.map((book) => ({ ...book, age: group.label, category: group.category })));
-const ageFilters = ["Todas", ...ageGroups.map((group) => group.label)];
-const categoryFilters = ["Todas", "Infantil", "Juvenil"];
+const coverImages: Record<string, string> = {
+  "El mundo según Lea": "/covers/el-mundo-segun-lea.webp",
+  "La bruja que no quería una escoba": "/covers/la-bruja-que-no-queria-una-escoba.webp",
+  "Colegio de poderes secretos": "/covers/colegio-de-poderes-secretos.webp",
+  Amarillo: "/covers/amarillo.webp",
+  "Karlsson en el tejado": "/covers/karlsson-en-el-tejado.webp",
+  "Miss Agatha. Misterio en Londres": "/covers/miss-agatha-misterio-en-londres.webp",
+  "La señora Lana 2": "/covers/la-senora-lana-2.webp",
+  "El club del fuego secreto": "/covers/el-club-del-fuego-secreto.webp",
+  "Herederos. La piedra del destino": "/covers/herederos-la-piedra-del-destino.webp",
+  "Serie Ideas en la Casa del Árbol": "/covers/serie-ideas-en-la-casa-del-arbol.webp",
+  "Las almohadas mágicas": "/covers/las-almohadas-magicas.webp",
+  "Nika y el misterio de Violet Hill": "/covers/nika-y-el-misterio-de-violet-hill.webp",
+  "Otra vez al teatro con Rodari": "/covers/otra-vez-al-teatro-con-rodari.webp",
+  "El niño de fuego": "/covers/el-nino-de-fuego.webp",
+  "Guerrero tigre. El ataque del rey dragón": "/covers/guerrero-tigre-el-ataque-del-rey-dragon.webp",
+  "Cómo arreglar un libro mojado": "/covers/como-arreglar-un-libro-mojado.webp",
+  "Capitán Lucas": "/covers/capitan-lucas.webp",
+  "El secreto del contrabandista": "/covers/el-secreto-del-contrabandista.webp",
+  "Los tres terribles inventos de Walter Swizwittha": "/covers/los-tres-terribles-inventos-de-walter-swizwittha.webp",
+  "Crónicas de Avonlea": "/covers/cronicas-de-avonlea.webp",
+  "Preparados, listo, ¡ya!": "/covers/preparados-listo-ya.webp",
+  "El joven Lorca": "/covers/el-joven-lorca.webp",
+  "Los dioses del Norte 5. El despertar del lobo": "/covers/los-dioses-del-norte-5-el-despertar-del-lobo.webp",
+  "Amanda Black. El templo olvidado": "/covers/amanda-black-el-templo-olvidado.webp",
+  "City Spies 3. La ciudad prohibida": "/covers/city-spies-3-la-ciudad-prohibida.webp",
+  "Manuela Jones y el misterio de la Alhambra": "/covers/manuela-jones-y-el-misterio-de-la-alhambra.webp",
+  Feriópolis: "/covers/feriopolis.webp",
+  "Crónicas de la prehistoria": "/covers/cronicas-de-la-prehistoria.webp",
+  "Trilogía de Howl": "/covers/trilogia-de-howl.webp",
+  "Secuestro en la pandemia": "/covers/secuestro-en-la-pandemia.webp",
+  "El príncipe de los caballos": "/covers/el-principe-de-los-caballos.webp",
+  "Elliot Tomclyde": "/covers/elliot-tomclyde.webp",
+  "La historia imposible de Sebastian Cole": "/covers/la-historia-imposible-de-sebastian-cole.webp",
+  "El muro que nos separa": "/covers/el-muro-que-nos-separa.webp",
+  "La chica que hablaba oso": "/covers/la-chica-que-hablaba-oso.webp",
+  "Los ladrones buenos": "/covers/los-ladrones-buenos.webp",
+  "El explorador del Amazonas": "/covers/el-explorador-del-amazonas.webp",
+  "¿Quién quieres ser?": "/covers/quien-quieres-ser.webp",
+  "Ceniza. Historia de una niña y su monstruo": "/covers/ceniza-historia-de-una-nina-y-su-monstruo.webp",
+  "El diario de la peste": "/covers/el-diario-de-la-peste.webp",
+  "Cuatro Lunas 1. Mareas de magia": "/covers/cuatro-lunas-1-mareas-de-magia.webp",
+  "El secreto de mi madre": "/covers/el-secreto-de-mi-madre.webp",
+  "Saga Entonces": "/covers/saga-entonces.webp",
+  "Julia y el tiburón": "/covers/julia-y-el-tiburon.webp",
+  "El mar detrás": "/covers/el-mar-detras.webp",
+  "Trenza del mar Esmeralda": "/covers/trenza-del-mar-esmeralda.webp",
+  Redes: "/covers/redes.webp",
+  "Alas negras": "/covers/alas-negras.webp",
+  Guiño: "/covers/guino.webp",
+  Ghost: "/covers/ghost.webp",
+  "Entre tonos de gris": "/covers/entre-tonos-de-gris.webp",
+  "Querido Bruto": "/covers/querido-bruto.webp",
+  "Las recetas perdidas de la taberna Kamogawa": "/covers/las-recetas-perdidas-de-la-taberna-kamogawa.webp",
+  "Toda la verdad": "/covers/toda-la-verdad.webp",
+  "De acuerdo, Jeeves": "/covers/de-acuerdo-jeeves.webp",
+  "Cincuenta cincuenta": "/covers/cincuenta-cincuenta.webp",
+  "La enfermera de Bellevue": "/covers/la-enfermera-de-bellevue.webp",
+  Erupción: "/covers/erupcion.webp",
+  "Train Kids": "/covers/train-kids.webp",
+  "Ninfa rota": "/covers/ninfa-rota.webp",
+  "Voy a traicionarte": "/covers/voy-a-traicionarte.webp",
+  "El túnel 29": "/covers/el-tunel-29.webp",
+  "Asesinato para principiantes": "/covers/asesinato-para-principiantes.webp",
+  "El secreto del río": "/covers/el-secreto-del-rio.webp",
+};
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+const allBooks = ageGroups.flatMap((group) =>
+  group.books.map((book) => ({
+    ...book,
+    age: group.label,
+    category: group.category,
+    cover: coverImages[book.title] ? `${basePath}${coverImages[book.title]}` : undefined,
+  })),
+);
 
 export default function Home() {
-  const [selectedAge, setSelectedAge] = useState("Todas");
-  const [selectedCategory, setSelectedCategory] = useState("Todas");
   const [query, setQuery] = useState("");
   const deferredQuery = useDeferredValue(query.trim().toLowerCase());
 
   const visibleBooks = allBooks.filter((book) => {
-    const matchesAge = selectedAge === "Todas" || book.age === selectedAge;
-    const matchesCategory = selectedCategory === "Todas" || book.category === selectedCategory;
-    const searchable = `${book.title} ${book.author} ${book.description} ${book.age}`.toLowerCase();
-    return matchesAge && matchesCategory && searchable.includes(deferredQuery);
+    const searchable = `${book.title} ${book.author} ${book.description} ${book.age} ${book.category}`.toLowerCase();
+    return searchable.includes(deferredQuery);
   });
-
-  function updateAge(age: string) {
-    startTransition(() => setSelectedAge(age));
-  }
-
-  function updateCategory(category: string) {
-    startTransition(() => setSelectedCategory(category));
-  }
 
   return (
     <main className="page-shell" id="arriba">
@@ -455,7 +517,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="finder" aria-label="Buscador y filtros">
+      <section className="finder" aria-label="Buscador de libros">
         <label className="search-box">
           <span>Buscar por título, autor o tema</span>
           <input
@@ -465,54 +527,19 @@ export default function Home() {
             type="search"
           />
         </label>
-
-        <div className="filter-block" aria-label="Filtrar por etapa">
-          {categoryFilters.map((category) => (
-            <button
-              className={selectedCategory === category ? "chip active" : "chip"}
-              key={category}
-              onClick={() => updateCategory(category)}
-              type="button"
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        <div className="age-strip" aria-label="Filtrar por edad">
-          {ageFilters.map((age) => (
-            <button className={selectedAge === age ? "age-pill active" : "age-pill"} key={age} onClick={() => updateAge(age)} type="button">
-              {age}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="age-map" aria-label="Mapa de edades">
-        {ageGroups.map((group) => (
-          <button className="age-card" key={group.label} onClick={() => updateAge(group.label)} type="button">
-            <span>{group.category}</span>
-            <strong>{group.label}</strong>
-            <small>{group.books.length} libros</small>
-          </button>
-        ))}
       </section>
 
       <section className="results-header" aria-live="polite">
         <p>
           {visibleBooks.length} {visibleBooks.length === 1 ? "resultado" : "resultados"}
         </p>
-        {(selectedAge !== "Todas" || selectedCategory !== "Todas" || query) && (
+        {query && (
           <button
             className="reset-button"
-            onClick={() => {
-              setQuery("");
-              setSelectedAge("Todas");
-              setSelectedCategory("Todas");
-            }}
+            onClick={() => setQuery("")}
             type="button"
           >
-            Limpiar filtros
+            Limpiar búsqueda
           </button>
         )}
       </section>
@@ -521,6 +548,7 @@ export default function Home() {
         {visibleBooks.map((book) => (
           <details className="book-card" key={`${book.age}-${book.title}`}>
             <summary>
+              {book.cover && <img alt={`Portada de ${book.title}`} className="book-cover" loading="lazy" src={book.cover} />}
               <span className="book-meta">{book.age}</span>
               <h2>{book.title}</h2>
               <p>{book.author}</p>
@@ -532,7 +560,7 @@ export default function Home() {
 
       {visibleBooks.length === 0 && (
         <section className="empty-state">
-          <h2>No hay resultados con esos filtros</h2>
+          <h2>No hay resultados para esa búsqueda</h2>
           <p>Prueba con otro tramo de edad o con una palabra más general, como aventura, misterio o amistad.</p>
         </section>
       )}
